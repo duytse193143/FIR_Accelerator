@@ -38,6 +38,12 @@ module tb_fir;
         forever #5 clk = ~clk; 
     end
 
+    // BONUS: XUẤT FILE VCD ĐỂ ĐO CÔNG SUẤT ĐỘNG (QUARTUS)
+    initial begin
+        $dumpfile("fir_power_v1.vcd");
+        $dumpvars(0, tb_fir); 
+    end
+
     // 6. KỊCH BẢN CHẠY CHÍNH
     initial begin
         // Mở file đọc dữ liệu đầu vào (cùng thư mục)
