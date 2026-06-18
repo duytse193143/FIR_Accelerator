@@ -1,0 +1,22 @@
+C:/Users/PC/Documents/GitHub/FIR_Accelerator/tb/tb_fir.v {1 {vlog -work work -stats=none C:/Users/PC/Documents/GitHub/FIR_Accelerator/tb/tb_fir.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_fir
+
+Top level modules:
+	tb_fir
+
+} {} {}} C:/Users/PC/Documents/GitHub/FIR_Accelerator/rtl/fir_transposed.v {1 {vlog -work work -stats=none C:/Users/PC/Documents/GitHub/FIR_Accelerator/rtl/fir_transposed.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fir_transposed
+
+Top level modules:
+	fir_transposed
+
+} {} {}} C:/Users/PC/Documents/GitHub/FIR_Accelerator/rtl/fir_direct.v {1 {vlog -work work -stats=none C:/Users/PC/Documents/GitHub/FIR_Accelerator/rtl/fir_direct.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fir_direct
+
+Top level modules:
+	fir_direct
+
+} {} {}}
