@@ -30,3 +30,22 @@
 *.exe
 *.out
 *.app
+
+# Bỏ qua rác của Quartus Prime
+syn_direct/db/
+syn_direct/incremental_db/
+syn_transposed/db/
+syn_transposed/incremental_db/
+*.qws
+*.rpt
+*.summary
+*.sof
+*.pof
+
+# Bỏ qua rác của ModelSim
+sim/work/
+*.wlf
+*.mti
+
+# (Tuỳ chọn) Bỏ qua file kết quả, chỉ giữ lại file input gốc
+output_*.txt
