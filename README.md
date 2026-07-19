@@ -145,7 +145,7 @@ Based on the experimental data, the **Transposed Form** is the optimal choice fo
 
 **Group 7 — Integrated Circuit Design, FPT University**
 Tran Duy · Ngo Van Thang · Tran Quan Bao · Bui Huu Loi
-Advisor: Dr. Le The Dung
+
 
 ---
 
