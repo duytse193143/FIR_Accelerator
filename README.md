@@ -1,4 +1,5 @@
-# Hardware Optimization of FIR Filters: Direct Form vs. Transposed Form
+#  A Comparative Trade-off Analysis of Direct and Transposed Architectures for 16-tap FIR Filters on FPGA
+
 
 A PPA (Performance – Power – Area) trade-off analysis between two micro-architectures, **Direct Form** and **Transposed Form**, for a 16-tap FIR filter, implemented at RTL level in Verilog and synthesized on an Intel Cyclone V FPGA (Intel Quartus Prime).
 
