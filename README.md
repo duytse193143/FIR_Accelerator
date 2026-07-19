@@ -18,7 +18,7 @@ This project implements and directly compares two classic architectures for a 16
 The output equation of an FIR filter of order N−1:
 
 ```
-y[n] = Σ (k=0 → N-1) h[k] · x[n-k]
+                                                y[n] = Σ (k=0 → N-1) h[k] · x[n-k]
 ```
 
 ---
@@ -30,7 +30,7 @@ y[n] = Σ (k=0 → N-1) h[k] · x[n-k]
 The input is propagated through a tapped delay line; each delayed sample is multiplied by its corresponding coefficient and accumulated through a 4-level balanced binary adder tree (since N = 16).
 
 ```
-T_cp,direct = T_mult + ⌈log2 N⌉ · T_add   (= T_mult + 4·T_add)
+                                       T_cp,direct = T_mult + ⌈log2 N⌉ · T_add   (= T_mult + 4·T_add)
 ```
 
 The critical path grows logarithmically with the number of taps, creating a **speed bottleneck** as the filter order increases.
@@ -44,7 +44,7 @@ The critical path grows logarithmically with the number of taps, creating a **sp
 The input `x[n]` is broadcast simultaneously to all multipliers, and delay registers are relocated into the middle of the adder chain. As a result, the critical path is reduced to just **one multiplier + one adder**, independent of N:
 
 ```
-T_cp,trans = T_mult + T_add
+                                               T_cp,trans = T_mult + T_add
 ```
 
 <img width="1396" height="435" alt="fig2_transposed_form" src="https://github.com/user-attachments/assets/b9bfd6a0-a180-43f8-86ac-3e70038c6ee6" />
@@ -62,7 +62,7 @@ T_cp,trans = T_mult + T_add
 - **Latency:** the Direct Form has one extra clock cycle of latency compared to the Transposed Form:
 
 ```
-y_D[n+1] = y_T[n]
+                                                     y_D[n+1] = y_T[n]
 ```
 
 Both architectures maintain a stable throughput of one output sample per clock cycle.
@@ -127,7 +127,7 @@ Based on the experimental data, the **Transposed Form** is the optimal choice fo
 
 ---
 
-##  Selected References
+##  References
 
 1. A. V. Oppenheim, R. W. Schafer, *Discrete-Time Signal Processing*, 3rd ed., Pearson, 2010.
 2. U. Meyer-Baese, *Digital Signal Processing with Field Programmable Gate Arrays*, 4th ed., Springer, 2014.
